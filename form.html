@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Form Practice</title>
+  </head>
+  <body>
+    <h1>Feedback Form</h1>
+
+    <!--Group 1-->
+    <fieldset>
+      <legend>Your Information</legend>
+      <label>Name:<br />
+      <input type="text" name="name"> </label>
+      <br />
+      <label>Email:<br />
+      <input type="text" name="email"> </label>
+      <br />
+      <p>
+        Gender:
+        <input type="radio" name="gender"
+        value="female"/> Female
+        <input type="radio" name="gender"
+        value="male"/> Male
+      </p>
+    </fieldset>
+
+    <!--Group 2-->
+    <fieldset>
+      <legend>Your Review</legend>
+      <p>
+      How did you hear about us?
+      <select name="findout">
+        <option value="Google"
+        selected="selected">Google</option>
+        <option value="Facebook">Facebook</option>
+        <option value="Instagram">Instagram</option>
+        <option value="Twitter">Twitter</option>
+        <option value="TikTok">TikTok</option>
+        <option value="Snapchat">Snapchat</option>
+      </select>
+      </p>
+      <p>
+        Would you visit again? <br />
+        <input type="radio" name="visit"
+        value="sure"/> Sure
+        <input type="radio" name="visit"
+        value="nope"/> Nope
+        <input type="radio" name="visit"
+        value="maybe"/> Maybe
+      </p>
+      <p>Comments:</p>
+      <textarea name="comments" cols="20" rows="4"></textarea>
+      <p>
+        <input type="checkbox" name="emails" value="emailme"
+        checked="checked"/> Sign me up for email updates
+      </p>
+     <input type="submit" value="Submit Review" />
+
+    </fieldset>
+  </body>
+</html>
